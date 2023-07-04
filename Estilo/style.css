@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root {
+    --index1: #1b6636;
+    --index2: #6c5381;
+    --index3: #449c64d7;
+    --index4: #b9904e;
+    --index5: #755b32;
+    --texto: 'Roboto Slab', serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+    text-align: center;
+    background-color: #2a8f4f;
+}
+
+img {
+    width: 100%;
+}
+
+h1{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    color: var(--ervas6);
+    color: #fefefe;
+    text-shadow: 4px 2px 0px #053d19d2;
+    font-family: 'Playfair Display', serif;
+}
+
+nav{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: var(--index1);
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 70px;
+    padding: 0;
+}
+
+li{
+    display: inline-flex;
+    width: 33%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+nav li:active {
+    background-color: #8f6a2fb0;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--ervas6);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fefefe;
+}
+
+.container {
+    display: block;
+    background-color: whitesmoke;
+    margin: 62% 7% 7% 7%;
+    border-radius: 10px;
+    padding: 1px 18px;
+    text-align: justify;
+    font-family: var(--texto);
+    color: #3B3B3B;
+    font-size: 0.9rem;
+}
+
+.imagens {
+    margin-bottom: 10px;
+}
+
+.imagens img{
+    display: initial;
+    flex-wrap: wrap;
+    width: 40%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 17px 2px #255335;
+    margin: 10px;
+    padding: 0;
+}
+
+footer {
+    background-color: var(--index2);
+    margin: 0;
+    padding: 2.5px;
+    color: whitesmoke;
+    /* margin-top: 10px; */
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    nav li {
+        width: 15%;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 3px;
+    }
+
+    nav li:hover {
+        background-color: #8f6a2fb0;
+        border-radius: 10px;
+    }
+
+    .container {
+        margin: 17% 24% 7% 24%;
+    }
+
+    .imagens {
+        margin-bottom: 73px;
+    }
+
+    .imagens img {
+        width: 21%;
+        margin-top: 10px;
+    }
+
+    /* footer{
+        margin-top: 14%;
+    } */
+
+}
+
+
+

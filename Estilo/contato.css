@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root {
+    --index1: #1b6636;
+    --index2: #6c5381;
+    --index3: #449c64d7;
+    --index4: #b9904e;
+    --index5: #755b32;
+    --texto: 'Roboto Slab', serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #2a8f4f;
+}
+
+h1{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    color: var(--ervas6);
+    color: #fefefe;
+    text-shadow: 4px 2px 0px #053d19d2;
+    font-family: 'Playfair Display', serif;
+}
+
+nav{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: var(--index1);
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 70px;
+    padding: 0;
+}
+
+li{
+    display: inline-flex;
+    width: 33%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+nav li:active {
+    background-color: #8f6a2fb0;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--ervas6);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fefefe;
+}
+
+.container {
+    display: block;
+    background-color: whitesmoke;
+    margin: 62% 7% 7% 7%;
+    border-radius: 10px;
+    padding: 6px 18px 27px;
+    text-align: justify;
+    font-family: var(--texto);
+    color: #3B3B3B;
+    font-size: 0.9rem;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: var(--index2);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#texto {
+    margin-top: 9px;
+}
+
+#sub, #res {
+    margin: 6px;
+    padding: 4px 23px;
+    background-color: var(--index4);
+    border: 0;
+    border-radius: 10px;
+}
+
+.botao {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin: auto;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.container2 p {
+    width: 100%;
+    display: block;
+    margin: 17px 49px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--index2);
+}
+
+img{
+    width: 12%;
+}
+
+#addimagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 11px;
+}
+
+.input_novo {
+    width: 30%;
+    border: none;
+    margin-left: 2px;
+}
+
+.rdsocial {
+    width: 15%;
+    cursor: pointer;
+}
+
+.animacao {
+    width: 276px;
+    height: 184px;
+    margin: 12px auto;
+    background-size: cover;
+    border-radius: 5%;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: imgmuda;
+}
+
+@keyframes imgmuda {
+    0% {
+        background-image: url("../Imagens/anim1.jpg") ;
+    }
+    35% {
+        background-image: url("../Imagens/anim2.jpg");
+    }
+    75% {
+        background-image: url("../Imagens/anim3.jpg");
+    }
+    100% {
+        background-image: url("../Imagens/anim4.jpg");
+    }
+}  
+
+
+footer {
+    background-color: var(--index2);
+    margin: 0;
+    padding: 2.5px;
+    color: whitesmoke;
+    margin-top: 13%;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    nav li {
+        width: 15%;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 3px;
+    }
+
+    nav li:hover {
+        background-color: #8f6a2fb0;
+        border-radius: 10px;
+    }
+
+    .container {
+        margin: 15% 23% 7% 23%
+    }
+
+    form {
+        width: 57%;
+        margin: auto;
+    }
+
+    #texto {
+        margin-top: 10px;
+    }
+
+    #res, #sub {
+        padding: 8px 47px;
+    }
+
+    #res:hover {
+        background-color: #8f6a2fa3;
+    }
+    #sub:hover {
+        background-color: #8f6a2fa1;
+    }
+
+    .container2 p {
+        margin: 26px 32% 14px;
+    }
+
+    .input_novo {
+        width: 81px;
+    }
+
+    .container2 img {
+        width: 14%;
+    }
+
+
+    .animacao {
+        width: 406px;
+        height: 271px;
+        margin: 18px auto;
+    }
+
+    footer{
+        margin-top: 0;
+    }
+
+}

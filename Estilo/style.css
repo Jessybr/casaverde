@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
@@ -23,40 +24,45 @@ img {
 }
 
 h1{
-    top: 0;
     width: 100%;
-    position: fixed;
-    z-index: 2;
-    color: var(--ervas6);
     color: #fefefe;
-    text-shadow: 4px 2px 0px #053d19d2;
     font-family: 'Playfair Display', serif;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.title_cont{
+    color: yellow;
+    background-color: black;
+}
+
+.somb{
+    text-shadow: 4px 2px 0px #053d19d2;
 }
 
 nav{
-    top: 0;
     width: 100%;
-    position: fixed;
     background-color: var(--index1);
-    z-index: 1;
 }
 
 ul {
     list-style-type: none;
-    margin-top: 70px;
+    margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 li{
-    display: inline-flex;
+    display: flex;
     width: 33%;
-    justify-content: space-between;
-    flex-direction: row;
+    padding: 1px;
 }
 
-nav li:active {
-    background-color: #8f6a2fb0;
-    border-radius: 10px;
+.nav_cont{
+    color: yellow;
+    text-decoration: underline;
 }
 
 a {
@@ -67,13 +73,27 @@ a {
     color: #fefefe;
 }
 
+#contraste{
+    width: 24%;
+    margin: auto;
+}
+
+.back_cont{
+    background-color: white;
+}
+
+.mudar_cor{
+    background-color: black !important;
+    color: white !important;
+}
+
 .container {
     display: block;
     background-color: whitesmoke;
-    margin: 62% 7% 7% 7%;
+    margin: 19px;
     border-radius: 10px;
     padding: 1px 18px;
-    text-align: justify;
+    text-align: left;
     font-family: var(--texto);
     color: #3B3B3B;
     font-size: 0.9rem;
@@ -88,38 +108,50 @@ a {
     flex-wrap: wrap;
     width: 40%;
     border-radius: 50%;
-    box-shadow: 0px 0px 17px 2px #255335;
     margin: 10px;
     padding: 0;
+}
+
+.img_somb{
+    box-shadow: 0px 0px 17px 2px #255335;
+}
+
+.img_cont{
+    border: 5px solid yellow;
 }
 
 footer {
     background-color: var(--index2);
     margin: 0;
-    padding: 2.5px;
+    padding: 1px;
     color: whitesmoke;
-    /* margin-top: 10px; */
 }
 
 @media (min-width: 768px) {
     h1 {
         font-size: 2.5rem;
+        margin: 0;
+        padding: 14px;
     }
 
     nav li {
-        width: 15%;
+        width: 13%;
         justify-content: center;
-        margin-top: 10px;
+        margin: 10px 0;
         padding: 3px;
     }
 
-    nav li:hover {
+    nav .back:hover {
         background-color: #8f6a2fb0;
         border-radius: 10px;
     }
 
+    #contraste{
+        width: 13%;
+    }
+
     .container {
-        margin: 17% 24% 7% 24%;
+        margin: 32px 182px;
     }
 
     .imagens {
@@ -130,11 +162,6 @@ footer {
         width: 21%;
         margin-top: 10px;
     }
-
-    /* footer{
-        margin-top: 14%;
-    } */
-
 }
 
 

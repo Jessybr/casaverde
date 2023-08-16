@@ -13,45 +13,55 @@
 html, body {
     margin: 0;
     padding: 0;
+    max-height: 100%;
     text-align: center;
-    background-color: #2a8f4f;
+    background-color: #2a8f4f;      
+    }
+
+img {
+    width: 100%;
 }
 
 h1{
-    top: 0;
     width: 100%;
-    position: fixed;
-    z-index: 2;
-    color: var(--ervas6);
     color: #fefefe;
-    text-shadow: 4px 2px 0px #053d19d2;
     font-family: 'Playfair Display', serif;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.title_cont{
+    color: yellow;
+    background-color: black;
+}
+
+.somb{
+    text-shadow: 4px 2px 0px #053d19d2;
 }
 
 nav{
-    top: 0;
     width: 100%;
-    position: fixed;
     background-color: var(--index1);
-    z-index: 1;
 }
 
 ul {
     list-style-type: none;
-    margin-top: 70px;
+    margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 li{
-    display: inline-flex;
+    display: flex;
     width: 33%;
-    justify-content: space-between;
-    flex-direction: row;
+    padding: 1px;
 }
 
-nav li:active {
-    background-color: #8f6a2fb0;
-    border-radius: 10px;
+.nav_cont{
+    color: yellow;
+    text-decoration: underline;
 }
 
 a {
@@ -60,6 +70,20 @@ a {
     font-size: 1rem;
     line-height: 1.5rem;
     color: #fefefe;
+}
+
+#contraste{
+    width: 24%;
+    margin: auto;
+}
+
+.back_cont{
+    background-color: white;
+}
+
+.mudar_cor{
+    background-color: black !important;
+    color: white !important;
 }
 
 .container {
@@ -123,6 +147,10 @@ form {
 
 img{
     width: 12%;
+}
+
+.img_cont{
+    border: 5px solid yellow;
 }
 
 #addimagem {
@@ -191,13 +219,17 @@ footer {
         padding: 3px;
     }
 
-    nav li:hover {
+    nav .back:hover {
         background-color: #8f6a2fb0;
         border-radius: 10px;
     }
 
     .container {
-        margin: 15% 23% 7% 23%
+        margin: 7% 23% 7% 23%
+    }
+
+    #contraste{
+        width: 13%;
     }
 
     form {

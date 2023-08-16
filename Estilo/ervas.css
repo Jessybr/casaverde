@@ -29,8 +29,16 @@ h1{
     position: fixed;
     z-index: 2;
     color: var(--ervas6);
-    text-shadow: 4px 2px 0px var(--ervas5);
     font-family: 'Playfair Display', serif;
+}
+
+.somb{
+    text-shadow: 4px 2px 0px var(--ervas5);
+}
+
+.title_cont{
+    color: yellow !important;
+    background-color: black !important;
 }
 
 nav{
@@ -39,6 +47,11 @@ nav{
     position: fixed;
     background-color: #527800;
     z-index: 1;
+}
+
+.nav_cont{
+    color: yellow;
+    text-decoration: underline;
 }
 
 nav ul {
@@ -54,16 +67,25 @@ nav li{
     flex-direction: row;
 }
 
-nav li:active {
-    background-color: #86c400b9;
-    border-radius: 10px;
-}
-
 a {
     text-decoration: none;
     color: var(--ervas6);
     font-size: 1rem;
     line-height: 1.5rem;
+}
+
+#contraste{
+    width: 24%;
+    margin: auto;
+}
+
+.back_cont{
+    background-color: white;
+}
+
+.mudar_cor{
+    background-color: black !important;
+    color: white !important;
 }
 
 
@@ -105,6 +127,11 @@ a {
     font-size: 0.9rem;
 }
 
+.plantas ul, li{
+    margin: auto;
+    width: 79%;
+    padding: 3px;
+} 
 
 .cuidados h3 {
     text-align: center;
@@ -131,13 +158,16 @@ span {
     font-size: 1rem;
 }
 
-.cuidados table > tr, th, td {
+.img_cont{
+    border: 2px solid yellow !important;
+}
+
+.cuidados .border {
     border: 2px solid var(--ervas4);
 }
 
 .cuidados table {
     margin: 30px auto;
-    border: 2px solid var(--ervas4);
 }
 
 .cuidados table td {
@@ -192,15 +222,19 @@ footer {
     }
 
     nav li {
-        width: 15%;
+        width: 13%;
         justify-content: center;
         margin-top: 10px;
         padding: 3px;
     }
 
-    nav li:hover {
+    nav .back:hover {
         background-color: #86c400b9;
         border-radius: 10px;
+    }
+
+    #contraste{
+        width: 13%;
     }
 
     .titulo {
@@ -208,10 +242,6 @@ footer {
     }
 
     .container p {
-        width: 70%;
-        margin: auto;
-    }
-    .container li {
         width: 70%;
         margin: auto;
     }
@@ -226,7 +256,7 @@ footer {
     }
 
     .vd video {
-        width: 50%
+        width: 50%;
     }
 
     .galeria img {

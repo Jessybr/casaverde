@@ -32,12 +32,26 @@ h1{
     font-family: 'Playfair Display', serif;
 }
 
+.somb{
+    text-shadow: 4px 2px 0px var(--ervas5);
+}
+
+.title_cont{
+    color: yellow !important;
+    background-color: black !important;
+}
+
 nav{
     top: 0;
     width: 100%;
     position: fixed;
     background-color: var(--araceas2);
     z-index: 1;
+}
+
+.nav_cont{
+    color: yellow;
+    text-decoration: underline;
 }
 
 nav ul {
@@ -53,11 +67,6 @@ nav li{
     flex-direction: row;
 }
 
-nav li:active {
-    background-color: #d3e546bf;
-    border-radius: 10px;
-}
-
 a {
     text-decoration: none;
     color: #fefefe;
@@ -65,6 +74,19 @@ a {
     line-height: 1.5rem;
 }
 
+#contraste{
+    width: 24%;
+    margin: auto;
+}
+
+.back_cont{
+    background-color: white;
+}
+
+.mudar_cor{
+    background-color: black !important;
+    color: white !important;
+}
 
 .fundo1 {
     background-image: url("../Imagens/inicial3.jpg");
@@ -104,6 +126,12 @@ a {
     font-size: 0.9rem;
 }
 
+.plantas ul, li{
+    margin: auto;
+    width: 79%;
+    padding: 3px;
+} 
+
 
 .cuidados h3 {
     text-align: center;
@@ -130,13 +158,16 @@ span {
     font-size: 1rem;
 }
 
-.cuidados table > tr, th, td {
+.img_cont{
+    border: 2px solid yellow !important;
+}
+
+.cuidados .border {
     border: 2px solid var(--araceas3);
 }
 
 .cuidados table {
     margin: 30px auto;
-    border: 2px solid var(--araceas3);
 }
 
 .cuidados table td {
@@ -190,15 +221,19 @@ footer {
     }
 
     nav li {
-        width: 15%;
+        width: 13%;
         justify-content: center;
         margin-top: 10px;
         padding: 3px;
     }
 
-    nav li:hover {
-        background-color: #d3e546bf;
+    nav .back:hover {
+        background-color: #86c400b9;
         border-radius: 10px;
+    }
+
+    #contraste{
+        width: 13%;
     }
 
     .titulo {
@@ -209,11 +244,7 @@ footer {
         width: 70%;
         margin: auto;
     }
-    .container li {
-        width: 70%;
-        margin: auto;
-    }
-
+    
     .cuidados li {
         width: 70%;
         margin: auto;

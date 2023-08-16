@@ -22,8 +22,6 @@ img {
     width: 100%;
 }
 
-
-
 h1{
     top: 0;
     width: 100%;
@@ -34,12 +32,26 @@ h1{
     font-family: 'Playfair Display', serif;
 }
 
+.somb{
+    text-shadow: 4px 2px 0px var(--ervas5);
+}
+
+.title_cont{
+    color: yellow !important;
+    background-color: black !important;
+}
+
 nav{
     top: 0;
     width: 100%;
     position: fixed;
     background-color: var(--cacto2);
     z-index: 1;
+}
+
+.nav_cont{
+    color: yellow;
+    text-decoration: underline;
 }
 
 nav ul {
@@ -55,11 +67,6 @@ nav li{
     flex-direction: row;
 }
 
-nav li:active {
-    background-color: #558000ab;
-    border-radius: 10px;
-}
-
 a {
     text-decoration: none;
     color: #fefefe;
@@ -67,6 +74,19 @@ a {
     line-height: 1.5rem;
 }
 
+#contraste{
+    width: 24%;
+    margin: auto;
+}
+
+.back_cont{
+    background-color: white;
+}
+
+.mudar_cor{
+    background-color: black !important;
+    color: white !important;
+}
 
 .fundo1 {
     background-image: url("../Imagens/inicial2.jpg");
@@ -132,13 +152,16 @@ span {
     font-size: 1rem;
 }
 
-.cuidados table > tr, th, td {
+.img_cont{
+    border: 2px solid yellow !important;
+}
+
+.cuidados .border {
     border: 2px solid var(--cacto5);
 }
 
 .cuidados table {
     margin: 30px auto;
-    border: 2px solid var(--cacto5);
 }
 
 .cuidados table td {
@@ -192,17 +215,21 @@ footer {
     }
 
     nav li {
-        width: 15%;
+        width: 13%;
         justify-content: center;
         margin-top: 10px;
         padding: 3px;
     }
 
-    nav li:hover {
+    nav .back:hover {
         background-color: #558000ab;
         border-radius: 10px;
     }
 
+    #contraste{
+        width: 13%;
+    }
+    
     .titulo {
         width: 40%;
     }
